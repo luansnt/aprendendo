@@ -1,0 +1,82 @@
+h1{
+    font-size:25px;
+    font-family:'Courier New', Courier, monospace;
+    margin-bottom: 30px;
+}
+
+body{
+    
+    margin: 0 auto;
+   
+}
+
+.caixa{
+    
+  background: skyblue;
+    width: 100vw;
+  height: 100vh;
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ align-items: center;
+    text-align: center;
+}
+
+.conteudo{
+    background-color: blueviolet;
+    border:  4px solid rgb(64, 64, 250);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+    width: 300px;
+    height: 375px;
+}
+
+.obs{
+    position: relative;
+    bottom: -25px;
+    left: 20px;
+    font-size: 14px;
+    width: 250px;
+    background: cyan;
+    border: 2px solid ;
+    border-radius: 6px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.salvos{
+    
+    position: static;
+    width: 175px;
+    height: 300px;
+    right: 100px;
+    background: rgb(45, 190, 190);
+    border: 3px solid rgb(64, 64, 250);
+    border-radius: 3px;
+    padding: 7px;
+}
+
+li{
+margin-bottom: 3px;
+}
+
+#recentes{
+font-family: 'Courier New', Courier, monospace;
+
+}
+
+input{
+    margin-bottom: 19px;
+    text-align: center;
+}
+
+button{
+ width: 100px;
+ padding: 2px;
+cursor: pointer;
+}
+
+input::placeholder{
+    color: black;
+    text-align: center;
+    
+}
