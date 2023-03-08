@@ -11,12 +11,15 @@
 <body>
     <div class="caixa">
     
-            <div class="conteudo">
-                <h1>Bem vindos a site do aleatorizador de criaturas para Gaia: O Prelúdio</h1>
-        <input type="text" name="difilculda" id="difilculda" placeholder="Digite a Dificuldade"><br>
-        <input type="text" name="pda" id="pda" placeholder="Quantos PdA?"><br>
-        <a href="criatura.html"><button name="gerador" id="gerador"target="_self">Gerar</button></a>
-        <div class="obs"><p>Lembre-se: Escreva sem acento e da maneira que aparece no livro. Facil, Normal, Dificil ou Extrema</p></div>
+        <div class="conteudo">
+            <h1>Bem vindos ao aleatorizador de criaturas para Gaia: O Prelúdio</h1>
+            <form action="criatura.html" method="get">
+                <input type="text" name="dificuldade" id="dificuldade" placeholder="Digite a Dificuldade"><br>
+                <input type="text" name="pda" id="pda" placeholder="Quantos PdA?"><br>
+                <button onclick="iniciar()" type="submit">Gerar</button>
+            </form>
+
+            <div class="obs"><p>Lembre-se: Escreva sem acento e da maneira que aparece no livro. Facil, Normal, Dificil ou Extrema</p></div>
         </div>  
        
         <div class="salvos">
