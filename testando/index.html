@@ -5,31 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Principal</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="teste.css">
     <script src="script.js"></script>
 </head>
 <body>
     <div class="caixa">
     
         <div class="conteudo">
-            <h1>Bem vindos ao aleatorizador de criaturas para Gaia: O Prelúdio</h1>
-            <form action="criatura.html" method="get">
-                <input type="text" name="dificuldade" id="dificuldade" placeholder="Digite a Dificuldade"><br>
-                <input type="text" name="pda" id="pda" placeholder="Quantos PdA?"><br>
-                <button onclick="iniciar()" type="submit">Gerar</button>
+            <h1 class="descricao">Bem vindos ao aleatorizador de criaturas para Gaia: O Prelúdio</h1>
+
+            <form class="form" action="criatura.html" method="get">
+                <input class="form text" type="text" name="dificuldade" id="dificuldade" placeholder="Digite a Dificuldade"><br>
+                <input class="form text" type="text" name="pda" id="pda" placeholder="Quantos PdA?"><br>
+                <button class="form button" onclick="iniciar()" type="submit">Gerar</button>
             </form>
 
-            <div class="obs"><p>Lembre-se: Escreva sem acento e da maneira que aparece no livro. Facil, Normal, Dificil ou Extrema</p></div>
+            <div class="obs">
+                <p class="informacao">Lembre-se: Escreva sem acento e da maneira que aparece no livro. Facil, Normal, Dificil ou Extrema</p></div>
         </div>  
        
         <div class="salvos">
         <p id="recentes"><strong> Criaturas Recentes</strong></p>
-            <ul>
-            <li>Destruidor</li>
-            <li>Caçador</li>
-            <li>Dizimador de Galaxias</li>
-        </ul>
+            <ul class="lista">
+                <li class="itens">Destruidor</li>
+                <li class="itens">Caçador</li>
+                <li class="itens">Dizimador de Galaxias</li>
+            </ul>
         </div>
     </div>
+    
+
 </body>
 </html>

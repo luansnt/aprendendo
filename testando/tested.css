@@ -1,0 +1,60 @@
+/* Estilos globais */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f3f3f3;
+    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilos da caixa */
+.caixa {
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 50px auto;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.botao {
+    background-color: #4f5b93;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px;
+    padding: 10px 20px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.botao:hover {
+    background-color: #6d7fc0;
+}
+
+#receber {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px;
+    text-align: center;
+
+}
+
+.status{
+    list-style-type: none;
+}
