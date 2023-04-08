@@ -8,16 +8,51 @@
 }
 
 body {
-    background-color: #f3f3f3;
+    background-color: rgb(20, 22, 24);
     font-family: Arial, sans-serif;
     font-family: 'Poppins', sans-serif;
 }
 
+
+html, body {
+    border-color: #72695b;
+    color: #f2f0ed;
+  }
+  html {
+    color-scheme: dark !important;
+  }
+  
+  :root {
+    --dm-neutral-background: #080a0b;
+    --dm-neutral-text: #e1dcd7;
+    --dm-selection-background: #0048ae;
+    --dm-selection-text: #f2f0ed;
+  }
+  
+  ::-webkit-scrollbar {
+    background-color: #161a1b;
+    color: #afa89c;
+  }
+  
+  ::-webkit-scrollbar-corner {
+    background-color: #0e1011;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #3f4548;
+  }
+  
+  ::selection {
+    background-color: #0048ae !important;
+    color: #f2f0ed !important;
+  }
+
+  
 /* Estilos da caixa */
 .caixa {
-    background-color: #ffffff;
+    background-color: rgb(14, 16, 17);
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 6px;
     margin: 50px auto;
     max-width: 600px;
     padding: 20px;
@@ -31,7 +66,7 @@ body {
 }
 
 .botao {
-    background-color: #4f5b93;
+    background-color: #6f42c1;
     border: none;
     border-radius: 5px;
     color: #ffffff;
