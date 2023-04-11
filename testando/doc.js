@@ -22,14 +22,7 @@ function aparecer(){
         lista.innerHTML += `<li> ${criaturaFeita[0][index]}</li>`
           
       }
-
-      
     
   botaoRevelar.setAttribute('disabled','')
-
-  for (let i=0; i < criaturaFeita[1].length; i++){
-    console.log(criaturaFeita[1][i])
-  }
-
-
+ 
 }

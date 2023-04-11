@@ -11,10 +11,10 @@ fetch('./homuncularioteste.csv')
 })
 
 let diff = 0
-var HabilidadesEscolhidas = []
-var HabilidadesRepetidas = []
-var EstatosCriatura = []
-var QuantCaract = 0
+let HabilidadesEscolhidas = []
+let HabilidadesRepetidas = []
+let EstatosCriatura = []
+let QuantCaract = 0
 
 function escolherDificuldade(DificuldadeEscrita, pda){
     DificuldadeEscrita = DificuldadeEscrita.toLowerCase()
@@ -38,7 +38,6 @@ function escolherDificuldade(DificuldadeEscrita, pda){
     return [diff, QuantCaract]
 }
 
-
 function Habis (diff){
     var aleatorio = Math.floor(Math.random()*diff) +1
     var linhaEscolhida = dadosProcessados[aleatorio]
@@ -54,7 +53,7 @@ function Habis (diff){
 
     HabilidadesEscolhidas.push(Escolhido)
 }
- 
+
 function iniciar(){
     HabilidadesEscolhidas = []
     EstatosCriatura = [0, 0, 0, 0] //PV , PE, PODER, PARAMETRO
@@ -70,10 +69,10 @@ function iniciar(){
     while (HabilidadesEscolhidas.length < criatura[1]){
         Habis(criatura[0])
     }
+
     EstatosCriatura[2] += total
     EstatosCriatura[3] += total
 
-    const criaturaFeita = [HabilidadesEscolhidas, EstatosCriatura ]
+    const criaturaFeita = [HabilidadesEscolhidas, EstatosCriatura]
     localStorage.setItem('criaturaFeita', JSON.stringify(criaturaFeita))
-
 }
